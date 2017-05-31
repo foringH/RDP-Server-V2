@@ -34,7 +34,9 @@ namespace RDPNonStatic_Server
         private void connectWithControl()//RDPSession session)
         {
             Console.WriteLine("connecting control");
+
             currentSession.OnAttendeeConnected += incomingControl;
+            currentSession.OnAttendeeDisconnected += outgoingControl;
 
             try
             {
@@ -53,7 +55,10 @@ namespace RDPNonStatic_Server
         private void connectWithView()//RDPSession session)
         {
             Console.WriteLine("connecting View");
+ 
             currentSession.OnAttendeeConnected += incomingView;
+            currentSession.OnAttendeeDisconnected += outgoingView;
+
 
             try
             {
@@ -74,6 +79,7 @@ namespace RDPNonStatic_Server
         {
             try
             {
+                
                 currentSession.Close();
                 currentSession = null;
 
@@ -110,6 +116,15 @@ namespace RDPNonStatic_Server
 
         }
 
+        private static void outgoingControl(object Guest)
+        {
+            countControlClient--;
+
+            Console.WriteLine("connected with control: " + countControlClient);
+
+
+        }
+
 
 
         private static void incomingView(object Guest)
@@ -119,7 +134,16 @@ namespace RDPNonStatic_Server
             IRDPSRAPIAttendee MyGuest = (IRDPSRAPIAttendee)Guest;
             MyGuest.ControlLevel = CTRL_LEVEL.CTRL_LEVEL_VIEW;
 
-            Console.WriteLine("connected with view: " + countControlClient);
+            Console.WriteLine("connected with view: " + countViewClient);
+
+
+        }
+
+        private static void outgoingView(object Guest)
+        {
+            countViewClient--;
+
+            Console.WriteLine("connected with view: " + countViewClient);
 
 
         }

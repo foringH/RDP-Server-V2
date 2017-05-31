@@ -14,18 +14,19 @@ namespace RDPNonStatic_Server
 
             SharePC pc1 = new SharePC();
 
-            SharePC pc=new SharePC();
+            SharePC pc2=new SharePC();
 
             pc1.shareControl();
-            String viewInvitation = pc1.getInvitationString(5); //the max no of client 
+            String viewInvitation = pc1.getInvitationString(16); //the max no of client 
             Console.WriteLine("for control:\n" + viewInvitation);
 
-            pc1.disconnect();
+            //pc1.disconnect();
 
-            pc.shareView();
-            String controlInvitation = pc.getUnprotectedInvitationString((int)2);
-            Console.WriteLine("for control:\n" + controlInvitation);
+            pc2.shareView();
+            String controlInvitation = pc2.getUnprotectedInvitationString(12); //the max no of client
+            Console.WriteLine("for view:\n" + controlInvitation);
 
+           
             String a = Console.ReadLine();
 
         }
