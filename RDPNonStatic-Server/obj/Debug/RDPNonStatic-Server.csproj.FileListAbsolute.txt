@@ -1,0 +1,8 @@
+c:\users\acer\documents\visual studio 2013\Projects\RDPNonStatic-Server\RDPNonStatic-Server\bin\Debug\RDPNonStatic-Server.exe.config
+c:\users\acer\documents\visual studio 2013\Projects\RDPNonStatic-Server\RDPNonStatic-Server\obj\Debug\RDPNonStatic-Server.csprojResolveAssemblyReference.cache
+c:\users\acer\documents\visual studio 2013\Projects\RDPNonStatic-Server\RDPNonStatic-Server\obj\Debug\Interop.RDPCOMAPILib.dll
+c:\users\acer\documents\visual studio 2013\Projects\RDPNonStatic-Server\RDPNonStatic-Server\obj\Debug\RDPNonStatic-Server.csproj.ResolveComReference.cache
+c:\users\acer\documents\visual studio 2013\Projects\RDPNonStatic-Server\RDPNonStatic-Server\bin\Debug\RDPNonStatic-Server.exe
+c:\users\acer\documents\visual studio 2013\Projects\RDPNonStatic-Server\RDPNonStatic-Server\bin\Debug\RDPNonStatic-Server.pdb
+c:\users\acer\documents\visual studio 2013\Projects\RDPNonStatic-Server\RDPNonStatic-Server\obj\Debug\RDPNonStatic-Server.exe
+c:\users\acer\documents\visual studio 2013\Projects\RDPNonStatic-Server\RDPNonStatic-Server\obj\Debug\RDPNonStatic-Server.pdb
